@@ -35,10 +35,13 @@
         <script defer>
             // Firebase Setup
             const firebaseConfig = {
-                /**
-                 * ! Place connection script here
-                 * ...
-                 */
+                    apiKey: "AIzaSyDEev--UR8DGq-a89DQ6F_hvQw60S6g5MA",
+                    authDomain: "heavener-88ce3.firebaseapp.com",
+                    projectId: "heavener-88ce3",
+                    storageBucket: "heavener-88ce3.appspot.com",
+                    messagingSenderId: "101370592644",
+                    appId: "1:101370592644:web:cddddef7a07a5bcb39b1d1",
+                    measurementId: "G-T9CWT2WC5Z"
             }
 
             firebase.initializeApp(firebaseConfig)
@@ -57,10 +60,7 @@
                  * */
                 id("read").on("click", () => {
                     id("title").textContent = "Clicked"
-
-                    /**
-                     * * Do something with Firestore here
-                     */
+                    
                 })
             })
         </script>
