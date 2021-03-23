@@ -61,6 +61,38 @@
                 id("read").on("click", () => {
                     id("title").textContent = "Clicked"
                     
+                                        firestore
+                        .collection('Name')
+                        .doc('Name')
+                        .set({
+                            item: 'L',
+                            id: 1,
+                            available: true
+                        })
+
+                    firestore
+                        .collection("Name")
+                        .doc("Name")
+                        .get()
+                        .then(doc => {
+                            console.log(doc.data())
+                        })
+
+                    firestore
+                        .collection('Name')
+                        .doc('Name')
+                        .update({
+                            available: false
+                        })
+                    
+                    firestore
+                        .collection('Name')
+                        .doc('Name')
+                        .delete()
+
+                })
+            })
+                    
                 })
             })
         </script>
